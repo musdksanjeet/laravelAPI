@@ -6,6 +6,11 @@
     <title>welcome page</title>
 </head>
 <body>
-<h3>This is a welcome page</h3>
+
+@foreach($data as $item)
+<h2>{{$item['id']}} {{$item['title']}}</h2>
+<p>{{$item['body']}}</p>
+@endforeach
+
 </body>
 </html>
